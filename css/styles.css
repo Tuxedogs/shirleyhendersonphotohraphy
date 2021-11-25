@@ -89,6 +89,35 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/* FIXME IMAGE SIZE TOO LARGE */
+/* Custom */
+.parallax-about {
+  background-image: url("../assets/img/about/cropped.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* FIXME change image */
+.parallax-packages {
+  background-image: url("../assets/img/portfolio/parallaxpackages.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row-center-about {
+  text-align: center;
+}
+
+.col-center-about {
+  display: inline-block;
+  float: none;
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -383,7 +412,7 @@ select {
 }
 
 .aboutimage {
-  width: 70%;
+  width: 100%;
   margin: auto;
 }
 
@@ -11614,7 +11643,7 @@ p {
 }
 .page-section h2.section-heading,
 .page-section .section-heading.h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -11647,6 +11676,10 @@ p {
   justify-content: center;
   padding: 0;
   border-radius: 100%;
+}
+
+.btn-social-blk {
+  color: black;
 }
 
 #mainNav {
@@ -11729,12 +11762,12 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../assets/img/jumbotron/er\ Titian\ portrait-4406\ .jpeg");
+  background-image: url("../assets/img/jumbotron/er\ Titian\ portrait-4406\ .jpeg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  height: 600px;
+  height: 42rem;
 }
 
 header.masthead .masthead-subheading {
@@ -11756,6 +11789,7 @@ header.masthead .masthead-heading {
   header.masthead {
     padding-top: 17rem;
     padding-bottom: 12.5rem;
+    height: 60rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
