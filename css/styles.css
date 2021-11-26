@@ -89,8 +89,24 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.homepagebody {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 /* FIXME IMAGE SIZE TOO LARGE */
 /* Custom */
+@media (max-width: 768px) {
+  .filter-nav {
+    margin-top: 7rem;
+    padding: 1rem;
+  }
+}
+
+.preload {
+  display: none;
+}
+
 .parallax-about {
   background-image: url("../assets/img/about/cropped.jpg");
   min-height: 500px;

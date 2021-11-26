@@ -47,3 +47,43 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
+// Filtering
+$(".filter-button").on("click", (e) => {
+  const filter = $(e.target).attr("data-filter");
+  console.log(filter);
+  const items = $(".item-content").parent();
+  for (item of items) {
+    if (filter == "") {
+      $(item).removeClass("d-none");
+      $(item).parent().removeClass("d-none");
+      console.log("x");
+    } else if ($(item).attr("data-category") == filter) {
+      $(item).removeClass("d-none preload");
+      $(item).parent().removeClass("d-none");
+    } else {
+      $(item).addClass("d-none fadeOut");
+      $(item).parent().addClass("d-none");
+    }
+  }
+});
+
+// fadein when filter selected parent div must have image class and child needs preload class with preload CSS applied display none
+
+// when d-none is removed add
+
+// fadein
+
+// window.onload = function () {
+//   // your stuff
+// };
+
+if ((document.body.style.opacity = `1`)) {
+  $(".image").ready(function () {
+    $(".preload").fadeIn(1000);
+  });
+} else {
+  console.log(`load error`);
+}
+
+// homepage
+onload = "document.body.style.opacity='1'";
